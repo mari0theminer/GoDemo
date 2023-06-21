@@ -2,21 +2,21 @@ package string
 
 import "strings"
 
-func makeCamelCase(s string) string {
+func MakeCamelCase(s string) string {
 	var newString string
 
 	words := strings.Fields(s)
 	for _, word := range words {
-		newString = newString + makeFirstLetterBig(word)
+		newString = newString + MakeFirstLetterBig(word)
 	}
 	return newString
 }
-func makeKebabCase(s string) string {
+func MakeKebabCase(s string) string {
 	stringWithMinus := strings.ReplaceAll(s, " ", "-")
 	return strings.ToLower(stringWithMinus)
 
 }
-func makeFirstLetterBig(s string) string {
+func MakeFirstLetterBig(s string) string {
 	var first bool = true
 	var newString string
 
