@@ -1,4 +1,4 @@
-package sllicy
+package Sllicy
 
 func Push(s *[]string, new string) {
 	*s = append(*s, new)
