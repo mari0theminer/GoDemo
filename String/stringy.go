@@ -31,3 +31,7 @@ func MakeFirstLetterBig(s string) string {
 	}
 	return newString
 }
+
+func ReplaceNyan(s string) string {
+	return "Nyan cat"
+}
